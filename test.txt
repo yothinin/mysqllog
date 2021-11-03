@@ -1,0 +1,32 @@
+		1321821 Query	SELECT value from `cacti`.`settings` where name='oldplugins'
+		1321821 Query	select value from `cacti`.`settings` where name='log_verbosity'
+		1321821 Query	SELECT 1 AS id, ph.name, ph.file, ph.function  FROM plugin_hooks AS ph  LEFT JOIN plugin_config AS pc  ON pc.d
+irectory=ph.name  WHERE ph.status = 1 AND hook = 'config_arrays'  AND ph.name IN ('settings', 'boost', 'dsstats')  UNION  SELECT pc.id, ph.nam
+e, ph.file, ph.function  FROM plugin_hooks AS ph  LEFT JOIN plugin_config AS pc  ON pc.directory=ph.name  WHERE ph.status = 1 AND hook = 'conf
+ig_arrays'  AND ph.name NOT IN ('settings', 'boost', 'dsstats')  ORDER BY id ASC
+		1321821 Query	select value from `cacti`.`settings` where name='log_verbosity'
+		1321821 Query	SELECT * FROM plugin_realms ORDER BY plugin, display
+		1321821 Query	select value from `cacti`.`settings` where name='log_verbosity'
+		1321821 Query	SELECT 1 AS id, ph.name, ph.file, ph.function  FROM plugin_hooks AS ph  LEFT JOIN plugin_config AS pc  ON pc.d
+irectory=ph.name  WHERE ph.status = 1 AND hook = 'config_settings'  AND ph.name IN ('settings', 'boost', 'dsstats')  UNION  SELECT pc.id, ph.n
+ame, ph.file, ph.function  FROM plugin_hooks AS ph  LEFT JOIN plugin_config AS pc  ON pc.directory=ph.name  WHERE ph.status = 1 AND hook = 'co
+nfig_settings'  AND ph.name NOT IN ('settings', 'boost', 'dsstats')  ORDER BY id ASC
+		1321821 Query	SELECT 1 AS id, ph.name, ph.file, ph.function  FROM plugin_hooks AS ph  LEFT JOIN plugin_config AS pc  ON pc.d
+irectory=ph.name  WHERE ph.status = 1 AND hook = 'valid_host_fields'  AND ph.name IN ('settings', 'boost', 'dsstats')  UNION  SELECT pc.id, ph
+.name, ph.file, ph.function  FROM plugin_hooks AS ph  LEFT JOIN plugin_config AS pc  ON pc.directory=ph.name  WHERE ph.status = 1 AND hook = '
+valid_host_fields'  AND ph.name NOT IN ('settings', 'boost', 'dsstats')  ORDER BY id ASC
+		1321821 Query	select value from `cacti`.`settings` where name='availability_method'
+		1321821 Query	select value from `cacti`.`settings` where name='ping_method'
+		1321821 Query	select value from `cacti`.`settings` where name='ping_port'
+		1321821 Query	select value from `cacti`.`settings` where name='ping_timeout'
+		1321821 Query	select value from `cacti`.`settings` where name='ping_retries'
+		1321821 Query	select value from `cacti`.`settings` where name='snmp_ver'
+		1321821 Query	select value from `cacti`.`settings` where name='snmp_community'
+		1321821 Query	select value from `cacti`.`settings` where name='snmp_username'
+		1321821 Query	select value from `cacti`.`settings` where name='snmp_password'
+		1321821 Query	select value from `cacti`.`settings` where name='snmp_auth_protocol'
+		1321821 Query	select value from `cacti`.`settings` where name='snmp_priv_passphrase'
+		1321821 Query	select value from `cacti`.`settings` where name='snmp_priv_protocol'
+		1321821 Query	select value from `cacti`.`settings` where name='snmp_port'
+		1321821 Query	select value from `cacti`.`settings` where name='snmp_timeout'
+123
